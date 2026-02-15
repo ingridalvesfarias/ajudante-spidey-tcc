@@ -14,4 +14,4 @@ Este aplicativo foi desenvolvido para simplificar tarefas comuns na elaboração
 
 
 ## 🚀 Como Usar
-Acesse o projeto aqui: ajudante-tcc.vercel.app
+Acesse o projeto aqui: [https://ajudante-tcc.vercel.app](https://ajudante-tcc.vercel.app)
