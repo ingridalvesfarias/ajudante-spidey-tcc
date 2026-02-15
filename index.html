@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/spiderman-logo.png" type="image/x-icon">
+    <title>SpideyTCC | Seu Ajudante de Trabalho de Conclusão</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Ícones específicos do Homem-Aranha (SVG) -->
+    <svg style="display: none;">
+        <symbol id="aranha-icon" viewBox="0 0 100 100">
+            <path d="M50 15L35 40L15 35L30 60L5 85L35 75L50 100L65 75L95 85L70 60L85 35L65 40Z" fill="currentColor"/>
+        </symbol>
+        <symbol id="teia-icon" viewBox="0 0 100 100">
+            <path d="M50 0L0 50L50 100L100 50Z" fill="none" stroke="currentColor" stroke-width="2"/>
+            <circle cx="50" cy="50" r="5" fill="currentColor"/>
+            <circle cx="25" cy="25" r="3" fill="currentColor"/>
+            <circle cx="75" cy="25" r="3" fill="currentColor"/>
+            <circle cx="25" cy="75" r="3" fill="currentColor"/>
+            <circle cx="75" cy="75" r="3" fill="currentColor"/>
+        </symbol>
+    </svg>
+</head>
+<body>
+    <!-- Cabeçalho com tema aranha -->
+    <header class="cabecalho-aranha">
+        <div class="container-cabecalho">
+            <div class="logo-aranha">
+                <img src="./img/spidey-logo.png" class="icone-aranha">><use href="#aranha-icon"></use></img>
+                <h1>Ajudante<span>TCC</span></h1>
+            </div>
+            <nav class="menu-aranha">
+                <button class="btn-menu" data-abrir="secao-ortografia">
+                    <svg class="icone-pequeno"><use href="#teia-icon"></use></svg> Ortografia
+                </button>
+                <button class="btn-menu" data-abrir="secao-pesquisa">
+                    <i class="fas fa-search"></i> Pesquisa
+                </button>
+                <button class="btn-menu" data-abrir="secao-redacao">
+                    <i class="fas fa-pencil-alt"></i> Redação
+                </button>
+                <button class="btn-menu" data-abrir="secao-config">
+                    <i class="fas fa-cog"></i> Configurações
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção de boas-vindas -->
+    <section class="secao-boas-vindas">
+        <div class="teia-decorativa"></div>
+        <div class="conteudo-boas-vindas">
+            <h2>"Com grandes responsabilidades vêm grandes ideias!"</h2>
+            <p>Seu ajudante personalizado para criar um TCC impecável — com ajustes de ortografia, estruturação natural e apoio em pesquisas!</p>
+            <button class="btn-principal" data-abrir="secao-redacao">Começar Agora</button>
+        </div>
+        <div class="aranha-decorativo"></div>
+    </section>
+
+    <!-- Container principal -->
+    <div class="container-principal">
+        <!-- Seção Ortografia e Gramática -->
+        <section id="secao-ortografia" class="secao-conteudo">
+            <h3><svg class="icone-pequeno"><use href="#teia-icon"></use></svg> Ajuste de Ortografia & Gramática</h3>
+            <div class="area-trabalho">
+                <div class="coluna-entrada">
+                    <label for="texto-ortografia">Cole seu texto aqui:</label>
+                    <textarea id="texto-ortografia" placeholder="Digite ou cole o parágrafo do seu TCC que precisa de ajustes..."></textarea>
+                    <button id="btn-ajustar-ortografia" class="btn-acoes">Ajustar Agora</button>
+                </div>
+                <div class="coluna-saida">
+                    <label>Texto ajustado:</label>
+                    <div id="resultado-ortografia" class="resultado">
+                        <p class="texto-vazio">Seu texto ajustado aparecerá aqui...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Pesquisa -->
+        <section id="secao-pesquisa" class="secao-conteudo" style="display: none;">
+            <h3><i class="fas fa-search"></i> Apoio em Pesquisas</h3>
+            <div class="area-trabalho">
+                <div class="coluna-entrada">
+                    <label for="tema-pesquisa">Tema ou pergunta da pesquisa:</label>
+                    <input type="text" id="tema-pesquisa" placeholder="Ex: Quais são os impactos da inteligência artificial na educação?">
+                    <label for="tipo-pesquisa">Tipo de material desejado:</label>
+                    <select id="tipo-pesquisa">
+                        <option value="artigos">Artigos científicos resumidos</option>
+                        <option value="livros">Referências de livros</option>
+                        <option value="dados">Dados e estatísticas relevantes</option>
+                        <option value="estudos">Estudos de caso relacionados</option>
+                    </select>
+                    <button id="btn-buscar-pesquisa" class="btn-acoes">Buscar Informações</button>
+                </div>
+                <div class="coluna-saida">
+                    <label>Resultados da pesquisa:</label>
+                    <div id="resultado-pesquisa" class="resultado">
+                        <p class="texto-vazio">Resultados aparecerão aqui...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Redação Linha por Linha -->
+        <section id="secao-redacao" class="secao-conteudo" style="display: none;">
+            <h3><i class="fas fa-pencil-alt"></i> Redação Linha por Linha</h3>
+            <div class="area-trabalho">
+                <div class="coluna-entrada">
+                    <label for="tema-redacao">Tema do parágrafo/seção:</label>
+                    <input type="text" id="tema-redacao" placeholder="Ex: Introdução sobre desenvolvimento sustentável">
+                    <label for="instrucoes-redacao">Instruções adicionais (tom, estilo, referências):</label>
+                    <textarea id="instrucoes-redacao" placeholder="Ex: Escrever de forma acadêmica mas acessível, mencionar a ODS 13..."></textarea>
+                    <button id="btn-gerar-redacao" class="btn-acoes">Gerar Texto Natural</button>
+                </div>
+                <div class="coluna-saida">
+                    <label>Texto gerado (100% natural):</label>
+                    <div id="resultado-redacao" class="resultado">
+                        <p class="texto-vazio">Seu texto aparecerá aqui...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Configurações -->
+        <section id="secao-config" class="secao-conteudo" style="display: none;">
+            <h3><i class="fas fa-cog"></i> Configurações da API</h3>
+            <div class="area-config">
+                <p class="aviso-importante">
+                    <i class="fas fa-exclamation-triangle"></i> Cole sua chave API da OpenAI abaixo (nunca compartilhe ela publicamente!).
+                </p>
+                <label for="chave-api">Chave API OpenAI:</label>
+                <input type="password" id="chave-api" placeholder="sk-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX">
+                <button id="btn-salvar-chave" class="btn-acoes">Salvar Chave</button>
+                <p class="texto-ajuda">
+                    Não tem uma chave? <a href="https://platform.openai.com/" target="_blank">Clique aqui para criar uma gratuitamente</a>
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Rodapé com tema -->
+    <footer class="rodape-aranha">
+        <div class="container-rodape">
+            <div class="logo-rodape">
+                <img src="./img/spidey-logo.png" class="icone-aranha"><use href="#aranha-icon"></use></img>
+                <p>AranhaTCC © 2026 - Feito com ❤️ por <a href="https://www.linkedin.com/in/ingridalvesfarias/" target="_blank">Ingrid Farias</a></p>
+            </div>
+            <p>"Seu TCC não precisa ser um problema de dimensões cósmicas — deixe o Spidey ajudar!"</p>
+        </div>
+    </footer>
+
+    <!-- Loader animado -->
+    <div id="loader" class="loader" style="display: none;">
+        <div class="aranha-loader"></div>
+        <p>Processando...</p>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
