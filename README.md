@@ -10,7 +10,6 @@ Este aplicativo foi desenvolvido para simplificar tarefas comuns na elaboração
 - *✅ Ajuste de Ortografia & Gramática*: Corrige erros e melhora a clareza do texto, mantendo o sentido original.
 - *🔍 Pesquisa de Tema*: Gera resumos, referências de artigos ou dados estatísticos sobre o tema escolhido.
 - *✍️ Geração de Redação*: Cria textos estruturados com base no tema e instruções fornecidas.
-- *🔐 Salvamento Seguro da Chave API*: A chave é guardada no armazenamento local do navegador (não é enviada para nenhum servidor).
 
 
 ## 🚀 Como Usar
