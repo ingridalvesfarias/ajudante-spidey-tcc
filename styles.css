@@ -115,8 +115,9 @@ body {
     height: 100%;
     z-index: 1;
     justify-content: center;
-    background-image: url('img/spidey-fundo1.jpg');
-    background-repeat: repeat;
+    background-image: url('img/spidey-fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .conteudo-boas-vindas {
