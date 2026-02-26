@@ -41,7 +41,6 @@ body {
 .cabecalho-aranha {
     background: linear-gradient(90deg, var(--cor-aranha-preta) 0%, var(--cor-aranha-escura) 100%);
     padding: 1.5rem 1rem;
-    box-shadow: 0 4px 10px rgba(230, 36, 41, 0.3);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -335,7 +334,6 @@ body {
     color: var(--cor-aranha-branca);
     padding: 2rem 1rem;
     text-align: center;
-    box-shadow: 0 -4px 10px rgba(230, 36, 41, 0.3);
 }
 
 .container-rodape {
@@ -366,6 +364,7 @@ body {
 
     .menu-aranha {
         justify-content: center;
+        align-items: center;
     }
 
     .conteudo-boas-vindas h2 {
@@ -391,8 +390,11 @@ body {
     }
 
     .logo-aranha img {
-        width: 45px;
-        height: 60px;
+        display: none;
+    }
+
+    .paragrafo {
+        display: none;
     }
 
     .rodape-aranha {
