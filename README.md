@@ -12,7 +12,6 @@ Este aplicativo foi desenvolvido para simplificar tarefas comuns na elaboração
 - *✍️ Geração de Redação*: Cria textos estruturados com base no tema e instruções fornecidas.
 
 
-## 🚀 Como Usar
-Acesse o projeto aqui: [https://ajudante-tcc.vercel.app](https://ajudante-tcc.vercel.app)
+## 🚀 Imagem do projeto
 
 <img src="img/imagem do projeto.png" alt="imagem do projeto">
